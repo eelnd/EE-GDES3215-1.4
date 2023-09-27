@@ -82,6 +82,7 @@
 
     .user-img img {
       width: 100%;
+      border-radius:1rem;
     }
 
     .user-grid {
@@ -216,6 +217,7 @@
     
     .friend-image img {
       height: 4rem;
+      border-radius:1rem;
     }
    
     .friend-status {
@@ -346,6 +348,7 @@
       display: grid;
       height: 10vh;
       justify-self: center;
+      border-radius:1rem;
     }
 
     .user-grid {
@@ -469,6 +472,7 @@
     
     .friend-image img {
       height: 4rem;
+      border-radius:1rem;
     }
 
     .friend-status {
