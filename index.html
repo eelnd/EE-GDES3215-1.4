@@ -1,0 +1,260 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Project 1: Game Progress Dashboard</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/boilerplate.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <meta name="theme-color" content="#fafafa">
+
+</head>
+
+<body>
+
+  <section class="user">
+    <div class="user-grid">
+      <div class="user-img">
+       <img src="img/user info/avatar.svg" alt="user avatar"></img>
+      </div>
+      <div class="usertext">
+        <h1>Archy</h1>
+        <p>AR: 57</p>
+        <p>Server: Europe</p>
+        <p>UID: 6178841</p>
+        <div class="days">
+          <p>Days Active</p>
+          <p>749</p>
+      </div>
+      </div>
+    </div>
+
+      <nav>
+        <a href="settings.html">
+          <img src="img/user info/settings.svg" alt="settings icon">
+        </a>
+        <a href="index.html">
+          <img src="img/user info/Vector.svg" alt="home icon">
+        </a>
+        <a href="explore.html">
+          <img src="img/user info/compass.svg" alt="explore page icon">
+        </a>
+      </nav>
+  </section>
+  
+  <section class="game-completion">
+
+    <div>
+      <h2>Game Completion</h2>
+    </div>
+
+    <div class="game-completion-list">
+
+      <div class="game-specific">
+        <div class="game-stat">
+        <p><strong>Achievements</strong></p>
+        <p class="percentage">714 of 1087 (65.7%)</p>
+      </div>
+        <div class="game-progress">
+        <img src="img/game completioon/achievements.svg"></img>
+        </div>
+      </div>
+      <!--
+      <div class="game-specific">
+        <div class="game-stat">
+        <p><strong>Chests Opened</strong></p>
+        <p class="percentage">3274 of 4950 (66.1%)</p>
+      </div>
+        <div class="game-progress">
+        <img src="img/game completioon/chests.svg"></img>
+        </div>
+      </div>
+      <div class="game-specific">
+        <div class="game-stat">
+        <p><strong>Teleporters Unlocked</strong></p>
+        <p class="percentage">273 of 276 (98.9%)</p>
+      </div>
+        <div class="game-progress">
+        <img src="img/game completioon/tp.svg"></img>
+        </div>
+      </div>
+      <div class="game-specific">
+        <div class="game-stat">
+        <p><strong>Domains Unlocked</strong></p>
+        <p class="percentage">50 of 54 (92.6%)</p>
+      </div>
+        <div class="game-progress">
+        <img src="img/game completioon/domains.svg"></img>
+        </div>
+      </div>
+      -->
+      <div class="game-specific">
+        <div class="nation">
+        <p><strong>Oculi Collected (by nation)</strong></p>
+        <div class="game-stat">
+          <p>Mondstadt</p>
+          <p class="percentage">100% (66/66)</p>
+        </div>
+        <div class="game-progress">
+          <img src="img/game completioon/mondstadt.png"></img>
+        </div>
+        <div class="game-stat">
+          <p>Liyue</p>
+          <p class="percentage">100% (131/131)</p>
+        </div>
+        <div class="game-progress">
+          <img src="img/game completioon/liyue.svg"></img>
+        </div>
+        <div class="game-stat">
+          <p>Inazuma</p>
+          <p class="percentage">99.4% (180/181)</p>
+        </div>
+        <div class="game-progress">
+          <img src="img/game completioon/ina.svg"></img>
+        </div>
+        <div class="game-stat">
+          <p>Sumeru</p>
+          <p class="percentage">71.2% (193/271)</p>
+        </div>
+        <div class="game-progress">
+          <img src="img/game completioon/sumeru.svg"></img>
+        </div>
+        <div class="game-stat">
+          <p>Fontaine</p>
+          <p class="percentage">43.5% (37/85)</p>
+        </div>
+        <div class="game-progress">
+          <img src="img/game completioon/font.svg"></img>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="daily">
+    <div>
+      <h2>Daily Completion</h2>
+    </div>
+    <div class="daily-img">
+      <img src="img/daily completion/daily.svg">
+      <p><strong>Daily Quests</strong> 75% (3/4)</p>
+    </div>
+  </section>
+  
+  <section class="task">
+    <div>
+      <h2>Task List</h2>
+    </div>
+    <div>
+      <ul>
+        <li>Spend 160 resin</li>
+        <li>Finish archon quest</li>
+        <li>Finish daily quests</li>
+        <li>Crown Venti</li>
+        <li>Farm for Lyney</li>
+      </ul>
+    </div>
+  </section>
+  
+  <section class="world">
+    <div>
+      <h2>World Exploration</h2>
+    </div>
+    <div>
+      <picture>
+        <source media="(min-width: 41rem)" srcset="file:///Users/eeland/Downloads/EE-gdes3215-project-1.3/modified-boilerplate/img/world%20completion/Group%2043.svg">
+        <img src='img/mobile/mobile graph.svg' alt='test'>
+      </picture>
+      <!-- <img src="img/world completion/Group 43.svg"></img> -->
+    </div>
+  </section>
+  
+  <section class="friend-list">
+    <div>
+      <h2>Friend List</h2>
+    </div>
+    <div>
+      <div class="friend-specific">
+        <div class="friend-image">
+        <img src="img/friend list/Avatar/Pixel-80.svg"></img>
+        </div>
+        <div class="friend-text">
+        <p><strong>North</strong></p>
+        <p>AR 60</p>
+        </div>
+        <div class="friend-status">
+          <img src=""></img>
+          <p>online</p>
+        </div>
+      </div>
+      <div class="friend-specific">
+        <div class="friend-image">
+        <img src="img/friend list/avatar/aether.svg"></img>
+        </div>
+        <div class="friend-text">
+        <p><strong>Aether</strong></p>
+        <p>AR 59</p>
+        </div>
+        <div class="friend-status">
+          <img src=""></img>
+          <p>idle</p>
+        </div>
+      </div>
+      <div class="friend-specific">
+        <div class="friend-image">
+        <img src="img/friend list/Avatar/tort.svg"></img>
+        </div>
+        <div class="friend-text">
+        <p><strong>Tortilla</strong></p>
+        <p>AR 46</p>
+        </div>
+        <div class="friend-status">
+          <img src=""></img>
+          <p>offline</p>
+        </div>
+      </div>
+      <div class="friend-specific">
+        <div class="friend-image">
+        <img src="img/friend list/Avatar/lumine.svg"></img>
+        </div>
+        <div class="friend-text">
+        <p><strong>Lumine</strong></p>
+        <p>AR 39</p>
+        </div>
+        <div class="friend-status">
+          <img src=""></img>
+          <p>offline</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

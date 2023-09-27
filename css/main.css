@@ -1,0 +1,481 @@
+/*DESKTOP*/
+@media screen and (min-width: 41rem) {
+  /* ALL */
+  * {
+    box-sizing: border-box;
+  }
+
+  /* colors */
+  :root {
+    --color-darkgray: #1E1E1E;
+    --color-white: #ffffff;
+    --color-chartruse: #B7B43D;
+    --color-darkchartruse: #808D31;
+    --color-darkblue: #203A53;
+    --color-mediumblue: #2A4D6E;
+    --color-darkteal:#3C717F;
+    --color-lightblue: #9AB8BF;
+    --color-offwhite: #E6E6E6;
+  }
+
+  /* sections */
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color:#203A53;
+  }
+  
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight:bold;
+    text-transform: uppercase;
+    color:#203A53;
+  }
+
+  p strong {
+    font-family: 'Hind Madurai', sans-serif;
+    font-weight: 600; 
+    color:#ffffff;
+  }
+  p {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    color:#ffffff;
+  }
+  
+  ul {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    color:#ffffff;
+  }
+
+  section {
+    background-color:var(--color-darkteal);
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+
+  body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    grid-gap: 1rem;
+    margin: 0;
+    height: 100vh;
+    background-color: var(--color-darkgray);
+    padding: 2rem;
+    line-height: 0;
+  }
+
+    /* user */
+    .user p {
+      color: #203A53;
+    }
+    .user {
+      grid-column: 1 / span 3;
+      grid-row: 1 / span 2;
+      background-color: var(--color-lightblue);
+      padding: 1rem;
+      display:grid;
+    }
+
+    .user-img img {
+      width: 100%;
+    }
+
+    .user-grid {
+      display: grid;
+      grid-template-rows: auto auto;
+      grid-gap: 1rem;
+      align-content: start;
+      padding: 1rem;
+    }
+    
+    .usertext {
+      display:grid;
+      grid-template-rows: 4rem 2rem 2rem 2rem auto;
+      text-align: center;
+    }
+    
+    .days {
+      background-color:var(--color-offwhite);
+      padding: 0.75rem 0.5rem;
+      border-radius: 1rem;
+      margin: 2rem 1rem;
+    }
+
+    .user nav {
+      display:grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-items: center;
+      background-color: #2A4D6E;
+      padding: 1rem;
+      border-radius: 1rem;
+      align-self: end;
+    }
+  
+    /* task */
+    .task {
+      grid-column: 14 / span rest;
+      grid-row: 1;
+    }
+    
+    .task h2 {
+      line-height: 0;
+    }
+    
+    .task li {
+      line-height: normal;
+    }
+
+    /* game completion */
+    .game-completion {
+      grid-column: 4 / span 5;
+      grid-row: 1;
+      padding: 1rem;
+    }
+
+    .game-completion-list {
+      display:grid;
+    }
+
+    .game-stat {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-bottom: -0.25rem;
+    }
+
+    .percentage {
+      justify-self: end;
+    }
+
+    /* daily */
+    .daily {
+      grid-column: 9 / span 5;
+      grid-row: 1;
+      padding: 1rem;
+    }
+
+    .daily-img {
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .daily-img img{
+      height: 25vh;
+      padding: 1rem 0rem;
+      display:block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .daily p {
+      margin-bottom: 0rem;
+    }
+    
+    /* world completion */
+    .world {
+      grid-column: 4 / span 8;
+      grid-row: 2;
+      padding: 1rem;
+      display: block;
+      margin-bottom: auto;
+    }
+
+    .world img {
+      height: 45vh;
+      display:block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .game-progress img {
+      width: 100%;
+    }
+
+    /* friend list */
+    .friend-list {
+      grid-column: 12 / span rest;
+      grid-row: 2;
+      padding: 1rem;
+      display: block;
+      margin-bottom: auto;
+    }
+
+    .friend-specific {
+      display: grid;
+      grid-template-columns: 1fr 3fr 1fr;
+      grid-gap: 0.5rem;
+      padding: 0.75rem 0.75rem;
+      background-color: #9AB8BF;
+      border-radius: 1rem;
+      margin-top: 0.75rem;
+    }
+    
+    .friend-image img {
+      height: 4rem;
+    }
+   
+    .friend-status {
+      justify-self: end;
+    }
+
+    .friend-list h2{
+    margin-bottom:1.5rem;
+  }
+}
+
+/*MOBILE*/
+@media screen and (max-width: 40rem) {
+  /* ALL */
+  * {
+    box-sizing: border-box;
+  }
+
+  /* colors */
+  :root {
+    --color-darkgray: #1E1E1E;
+    --color-white: #ffffff;
+    --color-chartruse: #B7B43D;
+    --color-darkchartruse: #808D31;
+    --color-darkblue: #203A53;
+    --color-mediumblue: #2A4D6E;
+    --color-darkteal:#3C717F;
+    --color-lightblue: #9AB8BF;
+    --color-offwhite: #E6E6E6;
+  }
+
+  p strong {
+    font-family: 'Hind Madurai', sans-serif;
+    font-weight: 600; 
+    color:#ffffff;
+  }
+  p {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    color:#ffffff;
+  }
+  
+  ul {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    color:#ffffff;
+  }
+
+  body {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    background-color: var(--color-darkgray);
+    padding: 1rem;
+    line-height: 0;
+  }
+
+  /* sections */
+
+  .user {
+    background-color: var(--color-lightblue);
+    display: block;
+    margin-bottom: auto;
+  }
+
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color:#203A53;
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight:bold;
+    text-transform: uppercase;
+    color:#203A53;
+    font-size: 1.5rem;
+  }
+
+  /* p strong {
+    font-family: 'Hind Madurai', sans-serif;
+    font-weight: 600; 
+    color:#ffffff;
+  }
+
+  p {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    color:#ffffff;
+  }
+  
+  ul {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    color:#ffffff;
+  } */
+
+  section {
+    background-color:var(--color-darkteal);
+    padding: 1rem;
+    border-radius: 1rem;
+    display: block;
+    margin-bottom: auto;
+  }
+
+    /* user */
+    .user p {
+      color: #203A53;
+    }
+
+    .user {
+      grid-row: 1;
+      grid-column: 1;
+      justify-content: center;
+      display: grid;
+      line-height: 0.5;
+      height: 100%;
+    }
+
+    .user-img {
+      display:grid;
+    }
+
+    .user-img img {
+      display: grid;
+      height: 10vh;
+      justify-self: center;
+    }
+
+    .user-grid {
+      padding: 1rem;
+    }
+
+    .usertext {
+      grid-template-rows: 2fr 1fr 1fr 1fr auto;
+      text-align: center;
+    }
+
+    .days {
+      background-color:var(--color-offwhite);
+      padding: 0.5rem 1rem;
+      border-radius: 1rem;
+      margin: 1rem 0.5rem;
+    }
+
+    .user nav {
+      display:grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-items: center;
+      background-color: #2A4D6E;
+      padding: 1rem;
+      border-radius: 1rem;
+      align-self: end;
+    }
+
+    /* task */
+    .task {
+      grid-row:4 ;
+      grid-column:1;
+      display: block;
+      margin-bottom: auto;
+    }
+
+    .task h2 {
+      line-height: 0;
+    }
+
+    .task li {
+      line-height: normal;
+    }
+
+    /* game completion */
+    .game-completion {
+      grid-row: 2;
+      grid-column: 1;
+    }
+
+    .game-completion-list {
+      display:grid;
+    }
+
+    .game-stat {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-bottom: -0.25rem;
+    }
+
+    .percentage {
+      justify-self: end;
+    }
+
+    .game-progress img {
+      width: 100%;
+    }
+
+    /* daily */
+    .daily {
+      grid-row: 3;
+      grid-column: 1;
+    }
+
+    .daily-img {
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .daily-img img{
+      height: 25vh;
+      padding: 1rem 0rem;
+      display:block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .daily p {
+      margin-bottom: 0rem;
+    }
+
+    /* world completion */
+    .world {
+      grid-row: 5;
+      grid-column: 1;
+    }
+
+    .world img {
+      display:block;
+      margin-left: auto;
+      margin-right: auto;
+      height: 32vh;
+    } 
+
+    /* friend list */
+    .friend-list {
+      grid-row: 6;
+      grid-column: 1;
+    }
+
+    .friend-specific {
+      display: grid;
+      grid-template-columns: 1fr 3fr 1fr;
+      grid-gap: 0.25rem;
+      padding: 0.5rem 0.5rem;
+      background-color: #9AB8BF;
+      border-radius: 1rem;
+      margin-top: 0.5rem;
+    }
+    
+    .friend-image img {
+      height: 4rem;
+    }
+
+    .friend-status {
+      justify-self: end;
+    }
+
+    .friend-list h2 {
+      margin-bottom: 1.5rem;
+    }
+}
